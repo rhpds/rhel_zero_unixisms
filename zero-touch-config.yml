@@ -15,15 +15,17 @@ antora:
     - name: module-05
       label: Module 5
 tabs:
-  - name: ">_ Root"
+tabs:
+  - name: ">_ root"
     port: 443
-    path: /wetty
+    path: /tty1
     user: root
     host: rhel
-    type: tty
   - name: ">_ rhel"
     port: 443
-    path: /wetty
+    path: /tty2
+    user: rhel
+    host: rhel
   - name: "Cockpit"
     port: 9943
     path: "/cockpit"
