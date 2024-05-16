@@ -16,12 +16,10 @@ in the home directory of *root*, the following command is valid:
 ls ~/openscap_data
 ----
 
-____
-_NOTE:_ This is another place where you can practice tab completion.
+NOTE: This is another place where you can practice tab completion.
 Typing `ls ~/op` and then pressing tab will complete the path for you
 since there is nothing else in *root*’s home directory starting with
 `op`.
-____
 
 This means that running `cd ~` will always change directories to the
 home directory of the user that you are logged in as.
@@ -35,10 +33,8 @@ You will see that your current directory has changed from
 
 to
 
-____
-_NOTE:_ The `cd` command contains yet another shortcut, where running
+NOTE: The `cd` command contains yet another shortcut, where running
 `cd` without any arguments will behave the same as running `cd ~`.
-____
 
 Print the full path to the directory you are currently in, the `~`
 directory, using the ``print working directory'' command:
@@ -68,9 +64,7 @@ pwd
 You can see that when logged in as *rhel*, `~` is equivalent to
 `/home/rhel`, which is the *rhel* user’s home directory.
 
-____
-_NOTE:_ The *root* user home directory is in a unique location, `/root`.
+NOTE: The *root* user home directory is in a unique location, `/root`.
 All other users’ home directories will be located following the
 convention `/home/<username>`, as in the case of the *rhel* user’s home
 directory.
-____

@@ -25,11 +25,9 @@ data that is associated with the user, so it is beneficial from an
 organization point of view to store them in the home directory
 associated with their specific user.
 
-____
-_NOTE_: One common hidden directory you will commonly run into is the
+NOTE: One common hidden directory you will commonly run into is the
 `.git` directory. This is part of any git repository and stores data
 used in version control for your local repository.
-____
 
 Creating a new hidden file or directory is quite simple, just start the
 name with a `.`

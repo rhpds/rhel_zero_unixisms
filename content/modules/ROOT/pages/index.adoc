@@ -22,10 +22,8 @@ The first time you try to list `man` pages, you will need to update your
 mandb
 ----
 
-____
-_NOTE:_ If the database has not been updated, you will get an output
+NOTE: If the database has not been updated, you will get an output
 similar to ``.: nothing appropriate.''
-____
 
 Once you have updated the `man` database, the following command will
 list all `man` pages available on your system:

@@ -10,14 +10,12 @@ and time in the following format:
 date
 ----
 
-____
-_NOTE:_ The output should match the current date and time when you are
+NOTE: The output should match the current date and time when you are
 running this lab, but it will be formatted using the Eastern Timezone
 since that is the default for the lab systems. Converting a date and
 time to epoch time is as simple as a single argument (`+%s`) with
 `date`. You can also specify the `-d` option to input a datetime instead
 of using the current one.
-____
 
 [source,bash]
 ----
