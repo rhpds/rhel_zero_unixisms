@@ -15,7 +15,6 @@ antora:
     - name: module-05
       label: Module 5
 tabs:
-tabs:
   - name: ">_ root"
     port: 443
     path: /tty1
@@ -26,6 +25,3 @@ tabs:
     path: /tty2
     user: rhel
     host: rhel
-  - name: "Cockpit"
-    port: 9943
-    path: "/cockpit"
