@@ -13,7 +13,7 @@ in the home directory of *root*, the following command is valid:
 
 [source,bash]
 ----
-ls ~/openscap_data
+ls ~/.ssh/
 ----
 
 NOTE: This is another place where you can practice tab completion.
