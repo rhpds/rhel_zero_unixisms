@@ -1,3 +1,5 @@
+=== Accessing documentation using man
+
 `man` is the command to access manual pages on Linux. These tell you how
 to use specific commands, programs, and conventions on your system, so
 knowing how to efficiently use the `man` command will save you time

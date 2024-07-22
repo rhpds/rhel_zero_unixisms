@@ -5,7 +5,7 @@ configured, and the format of the output can be controlled using format
 strings. If you run `date` without any arguments, it will print the date
 and time in the following format:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 date
 ----
@@ -17,7 +17,7 @@ time to epoch time is as simple as a single argument (`+%s`) with
 `date`. You can also specify the `-d` option to input a datetime instead
 of using the current one.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 date -d "Dec 12 2014 20:00:00" +%s
 ----
@@ -30,7 +30,7 @@ would like to convert. This syntax specifies that you would like to know
 the date at the given epoch time. Try this using the epoch time you just
 received from the previous command:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 date --date @1418432400
 ----
@@ -50,7 +50,7 @@ For this lab, we care about the second field in this error. You may
 recognize that ten digit number as a unix timestamp. To confirm, convert
 it to a standard date:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 date --date @1600796109
 ----

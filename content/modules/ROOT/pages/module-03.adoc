@@ -1,18 +1,26 @@
-Any file or directory that begins with a `.` in the name will be
+=== Accessing Hidden Files
+
+Sometimes it is useful to have a file or directory that it hidden,
+meaning it does not show up when running ls normally.
+This may be because the file is not often used, or because the file shouldn't be tampered with by inexperienced users.
+
+Any file or directory that begins with a `.` such as the `~/.ssh/` directory from the last section will be
 interpreted as hidden, and will only show up when using the `-a` option
 with `ls`.
 
 List the files in your current directory:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls
 ----
 
+:NOTE: If the directory is empty the command will execute without output.
+
 Now, try it again with the `-a` option. Many more files and directories
 will show up, even though you have not changed where you are looking.
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -a
 ----
@@ -32,7 +40,7 @@ used in version control for your local repository.
 Creating a new hidden file or directory is quite simple, just start the
 name with a `.`
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 touch .hidden-file
 ----
@@ -40,12 +48,12 @@ touch .hidden-file
 Now that this file is created, confirm that it only shows up when using
 `ls -a`:
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls
 ----
 
-[source,bash]
+[source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -a
 ----
