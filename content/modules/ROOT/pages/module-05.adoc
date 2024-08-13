@@ -42,11 +42,11 @@ Notice that this specifies the date in the timezone for this lab system,
 Eastern Time.
 
 For more information on using `date`, check out the
-https://man7.org/linux/man-pages/man1/date.1.html[date man page].
+https://man7.org/linux/man-pages/man1/date.1.html[date man page,window=read-later].
 
 An example of how you might run into unix time is available in this
 https://www.redhat.com/sysadmin/selinux-denial2[SELinux troubleshooting
-article]. The following example error is given:
+article,window=read-later]. The following example error is given:
 
 For this lab, we care about the second field in this error. You may
 recognize that ten digit number as a unix timestamp. To confirm, convert

@@ -51,7 +51,7 @@ pwd
 
 This shows that `~` is equivalent to `/root`, the home directory for the
 *root* user. Try the same test for a different user account on this
-system, *rhel*. Switch to *rhel* in the second terminal tab:
+system, *rhel*.
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
