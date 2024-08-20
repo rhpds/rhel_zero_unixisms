@@ -1,4 +1,4 @@
-=== Accessing documentation using man
+=== Accessing documentation using the man command
 
 `man` is the command to access manual pages on Linux. These tell you how
 to use specific commands, programs, and conventions on your system, so
