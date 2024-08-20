@@ -12,6 +12,11 @@ and time in the following format:
 date
 ----
 
+[source,text]
+----
+Tue Aug 20 07:37:29 PM UTC 2024
+----
+
 NOTE: The output should match the current date and time when you are
 running this lab, but it will be formatted using the Eastern Timezone
 since that is the default for the lab systems. Converting a date and
@@ -24,6 +29,11 @@ of using the current one.
 date -d "Dec 12 2014 20:00:00" +%s
 ----
 
+[source,text]
+----
+1418414400
+----
+
 This will show you the epoch time corresponding to the string you input:
 
 You can convert in the reverse direction with `date` as well by using
@@ -34,7 +44,12 @@ received from the previous command:
 
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
-date --date @1418432400
+date --date @1418414400
+----
+
+[source,text]
+----
+Fri Dec 12 08:00:00 PM UTC 2014
 ----
 
 This results in the original date that you input a few commands ago.
@@ -43,22 +58,3 @@ Eastern Time.
 
 For more information on using `date`, check out the
 https://man7.org/linux/man-pages/man1/date.1.html[date man page,window=read-later].
-
-An example of how you might run into unix time is available in this
-https://www.redhat.com/sysadmin/selinux-denial2[SELinux troubleshooting
-article,window=read-later]. The following example error is given:
-
-For this lab, we care about the second field in this error. You may
-recognize that ten digit number as a unix timestamp. To confirm, convert
-it to a standard date:
-
-[source,bash,subs="+macros,+attributes",role=execute]
-----
-date --date @1600796109
-----
-
-The article that this error was taken from was published on November 16,
-2020, which supports the fact that this was a unix timestamp generated
-during the process of writing the article. However, someone who is not
-familiar with the unix time format may never consider that this number
-relates to time at all.
