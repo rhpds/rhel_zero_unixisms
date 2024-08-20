@@ -34,9 +34,7 @@ home directory of the user that you are logged in as.
 cd ~
 ----
 
-You will see that your current directory has changed from
-
-to
+You will see that your current directory has changed from *"/"* to *"~"*
 
 NOTE: The `cd` command contains yet another shortcut, where running
 `cd` without any arguments will behave the same as running `cd ~`.
