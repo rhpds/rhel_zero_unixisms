@@ -75,8 +75,6 @@ information on the chrony daemon:
 man -wK chronyd
 ----
 
-NOTE: Press the "q" key to exit this command
-
 Then, if you decided you were looking for the `man` page on commands
 (section 1), you could open it with `man chronyc`. Since this command
 supports the regular expression option, you can add `--regex` to use

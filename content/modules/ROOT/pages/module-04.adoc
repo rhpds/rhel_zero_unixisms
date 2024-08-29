@@ -24,6 +24,8 @@ su - rhel
 
 Then, try to access the following file:
 
+NOTE: The below command is expected to fail with a "Permission Denied" error
+
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/shadow
