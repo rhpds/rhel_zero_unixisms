@@ -17,6 +17,7 @@ privileges.
 
 Use the `su` command to switch to the *rhel* user:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 su - rhel
@@ -26,6 +27,7 @@ Then, try to access the following file:
 
 NOTE: The below command is expected to fail with a "Permission Denied" error
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/shadow
@@ -36,6 +38,7 @@ contents. However, *rhel* is part of the _wheel_ group, so you can
 circumvent this permissions issue temporarily by prepending `sudo` to
 your previous command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 sudo cat /etc/shadow

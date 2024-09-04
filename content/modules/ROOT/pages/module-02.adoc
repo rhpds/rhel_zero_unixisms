@@ -7,6 +7,7 @@ The tilde `~` is aliased to the current user’s home directory. To test
 out some applications of this, change directories to the root directory
 of the system:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cd /
@@ -16,6 +17,7 @@ The `~` alias works in any case where you have to specify a path. If you
 wanted to list the contents of the _.ssh_ subdirectory located
 in the home directory of *root*, the following command is valid:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls ~/.ssh/
@@ -29,6 +31,7 @@ since there is nothing else in *root*’s home directory starting with
 This means that running `cd ~` will always change directories to the
 home directory of the user that you are logged in as.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cd ~
@@ -42,6 +45,7 @@ NOTE: The `cd` command contains yet another shortcut, where running
 Print the full path to the directory you are currently in, the `~`
 directory, using the ``print working directory'' command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 pwd
@@ -51,6 +55,7 @@ This shows that `~` is equivalent to `/root`, the home directory for the
 *root* user. Try the same test for a different user account on this
 system, *rhel*.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 su - rhel
@@ -59,6 +64,7 @@ su - rhel
 Adding the `-` after `su` will automatically change directories into the
 *rhel* user’s home directory, so print the full directory again:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 pwd
@@ -74,6 +80,7 @@ directory.
 
 To switch back to the *root* user for the next steps of the lab, type `exit` into the command line, or use the keyboard shortcut by pressing the "ctrl + d" keys at the same time.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 exit

@@ -19,6 +19,7 @@ don’t know the name of a page?
 The first time you try to list `man` pages, you will need to update your
 `man` database. Use the following command:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 mandb
@@ -30,6 +31,7 @@ similar to ``.: nothing appropriate.''
 Once you have updated the `man` database, the following command will
 list all `man` pages available on your system:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -k .
@@ -41,6 +43,7 @@ the output into `less` or another text viewer.
 If you aren’t sure exactly what a page contains, the `-f` option will
 print a short description for the specified page.
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -f grep
@@ -70,6 +73,7 @@ just output the location of the matches, you can use the `-wK` options
 to return where keywords are located. Say you were looking for
 information on the chrony daemon:
 
+.Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -wK chronyd
