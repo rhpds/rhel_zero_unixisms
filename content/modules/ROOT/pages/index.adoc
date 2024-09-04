@@ -28,6 +28,19 @@ mandb
 NOTE: If the database has not been updated, you will get an output
 similar to ``.: nothing appropriate.''
 
+.Output
+[source,text]
+----
+<< OUTPUT ABRIDGED >>
+
+Purging old database entries in /usr/local/share/man...
+Processing manual pages under /usr/local/share/man...
+0 man subdirectories contained newer manual pages.
+0 manual pages were added.
+0 stray cats were added.
+0 old database entries were purged.
+----
+
 Once you have updated the `man` database, the following command will
 list all `man` pages available on your system:
 
@@ -35,6 +48,17 @@ list all `man` pages available on your system:
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -k .
+----
+
+.Output
+[source,text]
+----
+<< OUTPUT ABRIDGED >>
+
+zmore (1)            - file perusal filter for crt viewing of compressed text
+znew (1)             - recompress .Z files to .gz files
+zramctl (8)          - set up and control zram devices
+zsoelim (1)          - interpret .so requests in groff input
 ----
 
 This list can be quite extensive, though, so you may want to pipe (`|`)
@@ -47,6 +71,12 @@ print a short description for the specified page.
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -f grep
+----
+
+.Output
+[source,text]
+----
+grep (1)             - print lines that match patterns
 ----
 
 One thing that is essential for every Linux user to learn is tab
@@ -77,6 +107,15 @@ information on the chrony daemon:
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 man -wK chronyd
+----
+
+.Output
+[source,text]
+----
+/usr/share/man/man1/chronyc.1.gz
+/usr/share/man/man8/chronyd.8.gz
+/usr/share/man/man8/systemd-timedated.service.8.gz
+/usr/share/man/man5/chrony.conf.5.gz
 ----
 
 Then, if you decided you were looking for the `man` page on commands

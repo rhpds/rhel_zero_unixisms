@@ -1,9 +1,9 @@
-=== What is the ~ directory?
+=== What is the '~' directory?
 
-Linux is filled with shortcuts, and learning these shortcuts is a crucial step to speeding up your work. 
+Linux is filled with shortcuts, and learning these shortcuts is a crucial step to speeding up your work.
 One such shortcut is the tilde `~`
 
-The tilde `~` is aliased to the current user’s home directory. To test
+The tilde `~` is aliased to the current user's home directory. To test
 out some applications of this, change directories to the root directory
 of the system:
 
@@ -23,9 +23,15 @@ in the home directory of *root*, the following command is valid:
 ls ~/.ssh/
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+authorized_keys  config  {{ guid }}.pem  {{ guid }}.pub
+----
+
 NOTE: This is another place where you can practice tab completion.
 Typing `ls ~/.ss` and then pressing tab will complete the path for you
-since there is nothing else in *root*’s home directory starting with
+since there is nothing else in *root*'s home directory starting with
 `.ss`.
 
 This means that running `cd ~` will always change directories to the
@@ -51,6 +57,12 @@ directory, using the ``print working directory'' command:
 pwd
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+/root
+----
+
 This shows that `~` is equivalent to `/root`, the home directory for the
 *root* user. Try the same test for a different user account on this
 system, *rhel*.
@@ -70,6 +82,12 @@ Adding the `-` after `su` will automatically change directories into the
 pwd
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+/home/rhel
+----
+
 You can see that when logged in as *rhel*, `~` is equivalent to
 `/home/rhel`, which is the *rhel* user’s home directory.
 
@@ -84,4 +102,10 @@ To switch back to the *root* user for the next steps of the lab, type `exit` int
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 exit
+----
+
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+logout
 ----

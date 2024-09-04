@@ -27,6 +27,12 @@ will show up, even though you have not changed where you are looking.
 ls -a
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+.  ..  .bash_history  .bash_logout  .bash_profile  .bashrc  .cache  .cshrc  .gnupg  .ssh  .tcshrc  .viminfo
+----
+
 Adding the `-a` option reveals that there are numerous hidden files and
 directories in this home directory. These are hidden because they are
 not files that you would interact with often, so there is no need for
@@ -51,14 +57,30 @@ touch .hidden-file
 Now that this file is created, confirm that it only shows up when using
 `ls -a`:
 
+Test that `ls` provides no output.
+
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+<< Blank Output Expected >>
+----
+
+Run `ls -a` to see the file.
+
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 ls -a
+----
+
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+.  ..  .bash_history  .bash_logout  .bash_profile  .bashrc  .cache  .cshrc  .gnupg .hidden-file  .ssh  .tcshrc  .viminfo
 ----

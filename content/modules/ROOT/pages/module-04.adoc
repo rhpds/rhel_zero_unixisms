@@ -23,6 +23,12 @@ Use the `su` command to switch to the *rhel* user:
 su - rhel
 ----
 
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+[rhel@bastion ~]$
+----
+
 Then, try to access the following file:
 
 NOTE: The below command is expected to fail with a "Permission Denied" error
@@ -31,6 +37,12 @@ NOTE: The below command is expected to fail with a "Permission Denied" error
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 cat /etc/shadow
+----
+
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+cat: /etc/shadow: Permission denied
 ----
 
 This configuration file’s permissions prevent *rhel* from reading its
@@ -42,6 +54,17 @@ your previous command:
 [source,bash,subs="+macros,+attributes",role=execute]
 ----
 sudo cat /etc/shadow
+----
+
+.Output
+[source,text,subs="+macros,+attributes"]
+----
+root:$6$rounds=656000$JqES2ILUQte.Kup/$A6dM3Gg0b3WZzZ1wpr6jmyjGB7Ne2AsTGBOSmtKsWjnkcnBtI0qaON6qqXqwXFM/iWZUddUFg/IJTNDl5cBgs0:19970:0:99999:7:::
+bin:*:19760:0:99999:7:::
+daemon:*:19760:0:99999:7:::
+adm:*:19760:0:99999:7:::
+
+<< OUTPUT ABRIDGED >>
 ----
 
 `sudo` allowed you to access the contents of the file without changing
@@ -56,5 +79,5 @@ only be necessary when making administrative changes. If you plan to
 make lots of administrative changes, it can save you some time to log in
 as *root*. However, the administrative block can act as a safeguard in
 the case that you erroneously execute an operation that will modify the
-system. Seeing ``permission denied'' will cause you to double check the
+system. Seeing `permission denied` will cause you to double check the
 command before re-running it using `sudo`.
