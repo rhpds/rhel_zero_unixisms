@@ -16,7 +16,7 @@ date
 .Output
 [source,text]
 ----
-Tue Aug 20 07:37:29 PM UTC 2024
+Fri Mar  7 05:17:10 PM UTC 2025
 ----
 
 NOTE: The output should match the current date and time when you are

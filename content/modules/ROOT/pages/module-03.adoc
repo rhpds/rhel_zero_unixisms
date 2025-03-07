@@ -57,7 +57,7 @@ touch .hidden-file
 Now that this file is created, confirm that it only shows up when using
 `ls -a`:
 
-Test that `ls` provides no output.
+Test the file is hidden with `ls`.
 
 .Command
 [source,bash,subs="+macros,+attributes",role=execute]
@@ -65,11 +65,7 @@ Test that `ls` provides no output.
 ls
 ----
 
-.Output
-[source,text,subs="+macros,+attributes"]
-----
-<< Blank Output Expected >>
-----
+This command has no expected output.
 
 Run `ls -a` to see the file.
 

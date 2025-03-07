@@ -23,10 +23,12 @@ Use the `su` command to switch to the *rhel* user:
 su - rhel
 ----
 
-.Output
-[source,text,subs="+macros,+attributes"]
+This command has no expected output, however the cli prompt will change to reflect your user.
+
+.Command
+[source,text]
 ----
-[rhel@bastion ~]$
+[rhel@rhel ~]$
 ----
 
 Then, try to access the following file:
